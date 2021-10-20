@@ -29,7 +29,11 @@ import {NavLink} from 'react-router-dom'
       </li>    
       <li className="nav-item">
         < NavLink activeClassName="menu-active" exact className="nav-link" to="contact">Contact</NavLink>
+      </li>     
+      <li className="nav-item">
+        < NavLink activeClassName="menu-active" exact className="nav-link" to="todo">ToDoList</NavLink>
       </li>    
+                 
                  
     </ul>
     

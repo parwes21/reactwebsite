@@ -1,5 +1,6 @@
 import logo from './logo.svg';
-// import './App.css';
+import './Contact.css';
+
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
 import {Switch, Route, Redirect} from 'react-router-dom';
@@ -10,6 +11,8 @@ import Contact from './Contact';
 import Error from './Error';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import Todo from './Todo';
+ 
 
 
 function App() {
@@ -22,8 +25,9 @@ function App() {
   <Route exact path="/about" component={About} />
   <Route exact path="/service" component={Service} />
   <Route exact path="/contact" component={Contact} />
+  <Route exact path="/todo" component={Todo} />
   <Redirect to="/" />
-  <Route component={Error} />
+  {/* <Route component={Error} /> */}
 </Switch>
 
 <Footer />
