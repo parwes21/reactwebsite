@@ -2,7 +2,7 @@ import React, { useState,useEffect } from "react";
 import Button from '@mui/material/Button';
 import { FormControl, InputLabel, Input } from "@mui/material";
  import Lists from "./Lists"; 
-import db from "./firebase";
+// import db from "./firebase";
  
 const Todo = () => {
     const [todos, setTodos] = useState([ ]);
@@ -21,8 +21,10 @@ const Todo = () => {
     }
     return(
         <>
-            <h1 className="text-center my-3">Hello This Is To Do List</h1>
-           
+            <h1 className="text-center my-3">Hello This Is To Do List </h1>
+            <div className="text-center"> 
+           <a href="https://todo-app-cp-48c22.web.app/" target="_blank"> Updated Todo List</a>
+           </div>
             <div className="text-center my-3">
             <form>
                 <FormControl>
@@ -44,7 +46,7 @@ const Todo = () => {
             </ul>
             </div>
 
-            
+         
         </>
     );
     }
